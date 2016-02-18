@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/toolBar"
+        layout="@layout/tool_bar" />
+
+    <RelativeLayout
+        android:id="@+id/rr_operations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBar" >
+
+        <Button
+            android:id="@+id/btn_Insert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Insert" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_Insert"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Select" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_select"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Update" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_update"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Delete ALL" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_del_specific"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_delete"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Delete specific Employee" >
+        </Button>
+    </RelativeLayout>
+
+</RelativeLayout>
